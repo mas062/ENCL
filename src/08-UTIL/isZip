@@ -1,0 +1,8 @@
+function [] = isZip(scnTmp)
+h =@(x) task(x);
+allCases(scnTmp,h);
+end
+function [] = task(x)
+zipbN = [pthbSCN(x) x '_RST.tar.gz'];
+display(exist(zipbN,'file');
+end
